@@ -107,7 +107,7 @@ void CNodeDynamic<T>::printAllBelow()
 template<typename T>
 T CNodeDynamic<T>::sumAllBelow()
 {
-	int ret = this->val;
+	T ret = this->val;
 	int n = getChildrenNumber();
 	for (int i = 0; i < n; ++i)
 	{
